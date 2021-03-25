@@ -42,12 +42,13 @@ def test_json(app, client):
         "colors": {
             "b": "blue",
             "g": "green",
-            "r": "red"
+            "r": "red",
+            "w": "white"
         },
         "languages": {
             "en": "English",
             "es": "Spanish",
-            "fr": "French"
+            "fr": "French",
         }
     }
     assert expected == json.loads(res.get_data(as_text=True))
